@@ -14,7 +14,7 @@ const UserList = ({ usersList, selectUser, getForm, warning }) => {
             <div className='container__card'>
             {orderedList.map((user) => (
                 <div key={user.id} className="card__user">
-                    <h3>{user.first_name}, {user.last_name}</h3>
+                    <h3>{user.first_name} {user.last_name}</h3>
                     <div className='body__card'>
                         <div className='info__user'>
                             <p><b>E-mail: </b><br />{user.email}</p>
